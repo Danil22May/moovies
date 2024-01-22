@@ -1,8 +1,10 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
 
-$routes = require_once __DIR__ . '/src/config/routes.php';
+define('APP_PATH', __DIR__);
 
-$uri = str_replace('/moovies', '' , $_SERVER['REQUEST_URI']);
+require_once APP_PATH . '/vendor/autoload.php';
 
-$routes[$uri]();
+use App\App;
+
+$app = new App;
+$app->run();

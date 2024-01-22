@@ -6,8 +6,13 @@ class Router
 {
     public function dispatch(string $uri): void
     {
-        $routes = require_once APP_PATH . '/src/config/routes.php';
+        $routes = $this->getRoutes();
 
         $routes[$uri]();
+    }
+
+    private function getRoutes(): array
+    {
+        return require_once APP_PATH . '/src/config/routes.php';
     }
 }

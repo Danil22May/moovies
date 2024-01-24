@@ -27,7 +27,7 @@ class Route
         return $this->uri;
     }
 
-    public function getAction(): callable
+    public function getAction(): mixed
     {
         return $this->action;
     }

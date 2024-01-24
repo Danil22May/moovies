@@ -52,6 +52,6 @@ class Router
      */
     private function getRoutes(): array
     {
-        return require_once APP_PATH . '/src/config/routes.php';
+        return require_once APP_PATH . '/config/routes.php';
     }
 }

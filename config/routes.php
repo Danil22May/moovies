@@ -9,4 +9,8 @@ return [
     Route::get('/moovies/home', [HomeController::class, 'index']),
 
     Route::get('/moovies/movies', [MovieController::class, 'index']),
+
+    Route::get('/moovies/test', function(){
+        echo 'Heeloo';
+    }),
 ];

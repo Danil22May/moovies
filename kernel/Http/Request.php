@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace App\Kernel\Http;
 
 class Request
 {
@@ -23,5 +23,15 @@ class Request
             $_FILES,
             $_COOKIE
         );
+    }
+
+    public function uri(): string
+    {
+        return strtok($this->server['REQUEST_URI'], '?');
+    }
+
+    public function method(): string
+    {
+        return $this->server['REQUEST_METHOD'];
     }
 }

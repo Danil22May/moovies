@@ -19,6 +19,7 @@ class ComposerStaticInit551c66e1591c862e586d39c9ed285fa5
         ),
         'A' => 
         array (
+            'App\\Kernel\\' => 11,
             'App\\' => 4,
         ),
     );
@@ -31,6 +32,10 @@ class ComposerStaticInit551c66e1591c862e586d39c9ed285fa5
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'App\\Kernel\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/kernel',
         ),
         'App\\' => 
         array (
